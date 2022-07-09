@@ -1,62 +1,62 @@
-function negate(a) {
+const negate = a => {
   return a === false;
-}
+};
 
-function both(a, b) {
+const both = (a, b) => {
   return a && b;
-}
+};
 
-function either(a, b) {
+const either = (a, b) => {
   return a || b;
-}
+};
 
-function none(a, b) {
+const none = (a, b) => {
   return !a && !b;
-}
+};
 
-function one(a, b) {
+const one = (a, b) => {
   return !a === b;
-}
+};
 
-function truthiness(a) {
+const truthiness = a => {
   return Boolean(a);
-}
+};
 
-function isEqual(a, b) {
+const isEqual = (a, b) => {
   return a === b;
-}
+};
 
-function isGreaterThan(a, b) {
+const isGreaterThan = (a, b) => {
   return a > b;
-}
+};
 
-function isLessThanOrEqualTo(a, b) {
+const isLessThanOrEqualTo = (a, b) => {
   return a <= b;
-}
+};
 
-function isOdd(a) {
+const isOdd = a => {
   return a % 2 === 1;
-}
+};
 
-function isEven(a) {
+const isEven = a => {
   return a % 2 === 0;
-}
+};
 
-function isSquare(a) {
+const isSquare = a => {
   return Boolean(Math.sqrt(a) % 1 === 0);
-}
+};
 
-function startsWith(char, string) {
+const startsWith = (char, string) => {
   return string.startsWith(char);
-}
+};
 
-function containsVowels(string) {
+const containsVowels = string => {
   return /[aeiou]/gi.test(string);
-}
+};
 
-function isLowerCase(string) {
+const isLowerCase = string => {
   return string === string.toLowerCase();
-}
+};
 
 module.exports = {
   negate,
